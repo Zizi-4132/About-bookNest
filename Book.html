@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bookstore</title>
+         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="Book.css">
+    </head>
+
+    <body>
+     <header class="navbar">
+        <div class="logo">BookNest.</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="Book.html">All Books</a>
+            <a href="About.html">About</a>
+            <div class="cart">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+    
+    <h1 class="page-title" style="text-align: center; margin-top: 20px;">Explore Our Collection of Books</h1><br><br>
+
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search for books..." oninput="searchBooks()">
+    </div>
+    
+    <div class="section-header">
+    <h2 class="section-title">Books</h2>
+    <select id="genre-select" onchange="filterByGenre()">
+        <option value="All">All Genres</option>
+        <option value="Literature">Literature</option>
+        <option value="Sci-Fi">Sci-Fi</option>
+        <option value="Romance">Romance</option>
+    </select>
+    </div>
+
+<div id="books-grid"></div>
+
+    <h2 class="section-title" style="margin-left: 50px;">Journals</h2>
+    <div id="journals-grid"></div>
+
+    <h2 class="section-title" style="margin-left: 50px;">Comics</h2>
+    <div id="comics-grid"></div>
+
+     <footer class="main-footer">
+        <h2 class="footer-logo">BookNest.</h2>
+        
+        <nav class="footer-nav">
+            <a href="#">Home</a>
+            <a href="Books.html">All Books</a>
+            <a href="About.html">About</a>
+        </nav>
+
+        <div class="social-wrapper">
+            <div class="social-card">
+                <a href="#" class="icon github">
+                    <i class="fa-brands fa-github"></i>
+                    <span>Github</span>
+                </a>
+                <a href="#" class="icon instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="#" class="icon tiktok">
+                    <i class="fa-brands fa-tiktok"></i>
+                    <span>TikTok</span>
+                </a>
+                <a href="#" class="icon telegram">
+                    <i class="fa-brands fa-telegram"></i>
+                    <span>Telegram</span>
+                </a>
+            </div>
+        </div>
+
+        <p class="footer-copy">&copy; 2026 BookNest. Built with Vanilla JS Components.</p>
+    </footer>
+
+    </body>
+    <script src="Book.js"></script>
+</html>
